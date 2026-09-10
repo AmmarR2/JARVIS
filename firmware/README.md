@@ -6,12 +6,19 @@ This directory contains firmware for the physical JARVIS device.
 
 Get the microcontroller communicating reliably with the desktop client.
 
-The first tests should stay simple:
+## Bring-Up Progress
 
-1. Power and program the board.
-2. Print a test message over serial.
-3. Receive that message on the PC.
-4. Move to wireless communication.
-5. Send commands in both directions.
+- [x] Power and program the ESP32-S3.
+- [x] Print a test message over serial.
+- [x] Verify serial communication with the PC.
+- [x] Connect the ESP32-S3 to Wi-Fi.
+- [ ] Establish ESP32-S3 ↔ PC communication over Wi-Fi.
+- [ ] Send commands in both directions.
 
-Hardware-specific source files will be added once the prototype board setup is finalized.
+### Verified Milestones
+
+**Serial bring-up:** Firmware uploaded successfully and serial output verified at 115200 baud.
+
+**Wi-Fi bring-up:** ESP32-S3 successfully joined the local Wi-Fi network and received a local IP address.
+
+Wi-Fi credentials are intentionally not stored in this repository.
